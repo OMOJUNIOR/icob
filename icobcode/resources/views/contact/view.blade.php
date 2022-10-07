@@ -8,7 +8,7 @@
         </div>
     @else
     <div class="pb-2 font-semibold text-center text-red-700 alert alert-error dark:bg-yellow-500 ">
-     {{'Bir saat sonra bu cookie kaydedilecek.'}}
+     {{'Bir saat sonra bu cookie Silenecektir.'}}
         </div>
     <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
         <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">

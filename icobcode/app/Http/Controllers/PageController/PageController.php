@@ -15,4 +15,13 @@ class PageController extends Controller
     {
         return view('contact.view');
     }
+
+    public function profil()
+    {
+        return view('instagram.instagram');
+    }
+
+    public function proxyIle(){
+        return view('instagram.proxy');
+    }
 }

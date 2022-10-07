@@ -2,7 +2,7 @@
 @section('content')
 <section class="bg-white dark:bg-gray-900">
   <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Bugün bizimle iletişime geçin</h2>
+      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Bizimle iletişime geçin</h2>
        @if(session()->has('success'))
         <div class="pb-2 font-semibold text-center text-green-600 alert alert-success dark:bg-slate-50 ">
         {{ session()->get('success') }}
@@ -16,7 +16,7 @@
        @csrf
            <div>
               <label for="isim" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Isiminiz</label>
-              <input type="text" name="isim" value="{{old('isim')}}" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder=" Isiminin gir" required>
+              <input type="text" name="isim" value="{{old('isim')}}" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder=" Isimininiz " required>
           </div>
 
           <div>

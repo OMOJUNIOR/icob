@@ -2,9 +2,7 @@
 
 use App\Http\Controllers\Cookie\CookieController;
 use App\Http\Controllers\Instagram\FeedController;
-use App\Http\Controllers\Instagram\FetchController;
 use App\Http\Controllers\PageController\PageController;
-use App\Http\Controllers\Twitter\LocationController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,17 +14,39 @@ use Illuminate\Support\Facades\Route;
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 |
-
-
-Route::get('/', function () {
-    return view('contact.contact');
-});
 */
 
+/*
+|--------------------------------------------------------------------------
+| Sayfalar Routes Controller
+|--------------------------------------------------------------------------
+*/
+
+Route::get('/', [PageController::class, 'index']);
 Route::get('/contact', [PageController::class, 'index'])->name('contact.index');
 Route::get('/goster', [PageController::class, 'viewCookie'])->name('contact.view');
-Route::post('/contact', [CookieController::class, 'setCookie'])->name('setCookie');
-Route::get('/get', [CookieController::class, 'getCookie']);
-Route::get('/cookie', [CookieController::class, 'getCookie']);
-Route::get('/instagram-proxy', [FeedController::class, 'proxy']);
-Route::get('/instagram-feed', [FeedController::class, 'getFeed']);
+Route::get('/instagram', [PageController::class, 'profil'])->name('instagram.instagram');
+Route::get('/proxy-ile',[PageController::class, 'proxyIle'])->name('instagram.proxy');
+
+/*
+|--------------------------------------------------------------------------
+| Cookie Routes Controller
+|--------------------------------------------------------------------------
+*/
+
+Route::controller(CookieController::class)->group(function () {
+    Route::post('/contact', 'setCookie')->name('setCookie');
+    Route::get('/cookie', 'getCookie');
+});
+
+/*
+|--------------------------------------------------------------------------
+| Feed(Profile Akişi) Routes Controller
+|--------------------------------------------------------------------------
+*/
+
+Route::controller(FeedController::class)->group(function () {
+    Route::post('/profil-aksini', 'profilAksini')->name('profilAksini');
+    Route::post('/proxy-aksini', 'proxy')->name('proxy');
+    Route::post('/login-islem', 'loginIslem')->name('loginIslem');
+});

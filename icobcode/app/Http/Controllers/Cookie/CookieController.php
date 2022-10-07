@@ -10,12 +10,12 @@ class CookieController extends Controller
 {
     public function setCookie(Request $request)
     {
-        $minutes = 60;
+        $dakika = 60;
         $response = new Response('Cookie Bşarıyla Oluşturuldu');
-        $response->withCookie(cookie('isim', $request->input('isim'), $minutes));
-        $response->withCookie(cookie('eposta', $request->input('eposta'), $minutes));
-        $response->withCookie(cookie('konu', $request->input('konu'), $minutes));
-        $response->withCookie(cookie('mesaj', $request->input('mesaj'), $minutes));
+        $response->withCookie(cookie('isim', $request->input('isim'), $dakika));
+        $response->withCookie(cookie('eposta', $request->input('eposta'), $dakika));
+        $response->withCookie(cookie('konu', $request->input('konu'), $dakika));
+        $response->withCookie(cookie('mesaj', $request->input('mesaj'), $dakika));
 
         return $response;
     }
