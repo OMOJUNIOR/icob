@@ -1,7 +1,7 @@
 @extends('layouts.all')
 @section('content')
 
-<div class="overflow-x-auto relative">
+<div class="relative mt-14">
 @empty(Cookie::get('isim') && Cookie::get('eposta') && Cookie::get('konu') && Cookie::get('mesaj'))
      <div class="pb-2 font-semibold text-center text-red-700 alert alert-error dark:bg-yellow-400 ">
      {{'Şu an için hiçbir cookie bulunmamaktadır.'}}

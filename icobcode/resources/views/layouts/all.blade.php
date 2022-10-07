@@ -14,6 +14,8 @@
        @include('includes.navbar')
 
         @yield('content')
-            
+
+
+      @include('includes.script')      
     </body>
 </html>

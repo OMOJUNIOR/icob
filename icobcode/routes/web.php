@@ -1,7 +1,10 @@
 <?php
 
 use App\Http\Controllers\Cookie\CookieController;
+use App\Http\Controllers\Instagram\FeedController;
+use App\Http\Controllers\Instagram\FetchController;
 use App\Http\Controllers\PageController\PageController;
+use App\Http\Controllers\Twitter\LocationController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,7 +23,13 @@ Route::get('/', function () {
 });
 */
 
-Route::get('/contact', [PageController::class, 'index']);
+Route::get('/contact', [PageController::class, 'index'])->name('contact.index');
+Route::get('/goster', [PageController::class, 'viewCookie'])->name('contact.view');
 Route::post('/contact', [CookieController::class, 'setCookie'])->name('setCookie');
 Route::get('/get', [CookieController::class, 'getCookie']);
-Route::get('/view-cookie', [CookieController::class, 'getCookie'])->name('contact.viewCookie');
+Route::get('/cookie', [CookieController::class, 'getCookie']);
+Route::get('/instagram', [FetchController::class, 'fetch']);
+Route::get('/instagram-location', [FetchController::class, 'getPlacesBylocation']);
+Route::get('/instagram-proxy', [FeedController::class, 'proxy']);
+Route::get('/instagram-feed', [FeedController::class, 'getFeed']);
+Route::get('/twitter', [LocationController::class, 'getTweetsByLocation']);

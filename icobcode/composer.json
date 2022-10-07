@@ -10,7 +10,10 @@
         "laravel/framework": "^9.19",
         "laravel/pint": "^1.2",
         "laravel/sanctum": "^3.0",
-        "laravel/tinker": "^2.7"
+        "laravel/tinker": "^2.7",
+        "pgrimaud/instagram-user-feed": "^6.16",
+        "phpfastcache/phpfastcache": "*",
+        "raiym/instagram-php-scraper": "*"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",

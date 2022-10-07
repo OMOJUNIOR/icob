@@ -22,6 +22,6 @@ class CookieController extends Controller
 
     public function getCookie(Request $request)
     {
-        return view('contact.viewCookie');
+        return view('contact.view');
     }
 }

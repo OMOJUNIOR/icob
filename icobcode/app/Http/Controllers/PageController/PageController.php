@@ -10,4 +10,9 @@ class PageController extends Controller
     {
         return view('contact.index');
     }
+
+    public function viewCookie()
+    {
+        return view('contact.view');
+    }
 }
