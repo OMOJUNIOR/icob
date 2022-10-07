@@ -28,8 +28,5 @@ Route::get('/goster', [PageController::class, 'viewCookie'])->name('contact.view
 Route::post('/contact', [CookieController::class, 'setCookie'])->name('setCookie');
 Route::get('/get', [CookieController::class, 'getCookie']);
 Route::get('/cookie', [CookieController::class, 'getCookie']);
-Route::get('/instagram', [FetchController::class, 'fetch']);
-Route::get('/instagram-location', [FetchController::class, 'getPlacesBylocation']);
 Route::get('/instagram-proxy', [FeedController::class, 'proxy']);
 Route::get('/instagram-feed', [FeedController::class, 'getFeed']);
-Route::get('/twitter', [LocationController::class, 'getTweetsByLocation']);
