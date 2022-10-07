@@ -9,10 +9,10 @@ ICOB
 
 ![App Screenshot](https://github.com/OMOJUNIOR/icob/blob/main/screenshots/Monosnap%202022-10-07%2010-07-26.jpg)
 
-![App Screenshot](https://raw.githubusercontent.com/OMOJUNIOR/icob/main/screenshots/Monosnap%202022-10-07%2011-32-50.jpg?token=GHSAT0AAAAAABWUSCZ4V2CO56VC5REW7UR4YZ75AKQ)
+![App Screenshot](https://github.com/OMOJUNIOR/icob/blob/main/screenshots/Monosnap%202022-10-07%2011-32-33.jpg)
 
 
-![App Screenshot](https://raw.githubusercontent.com/OMOJUNIOR/icob/main/screenshots/Monosnap%202022-10-07%2011-32-33.jpg?token=GHSAT0AAAAAABWUSCZ5UJSGMVAX5AQDNHL2YZ75BIA)
+![App Screenshot](https://github.com/OMOJUNIOR/icob/blob/main/screenshots/Monosnap%202022-10-07%2011-32-50.jpg)
 
 ** açik instagram hesabı api sonuç **
 
