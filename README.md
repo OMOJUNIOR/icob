@@ -26,7 +26,11 @@ Proxy için, değeri App\Http\Instagram\FeedController'da bulunan proxy yöntemi
 
 türkçem için özür dilerim :)
 
+4 Soru Cevabı
 
+Özel ağı atlamanın bir yolu, en azından ISP düzeyinde, bir VPN kullanmaktır, Bunun gibi durumlarda çevremdeki kısıtlı ağ trafiğine erişmek için çoğunlukla Nord VPN kullandım.
+
+PHP yazılım dilinde, ağla ilgili bazı sorunların çözülmesine yardımcı olmak için yerleşik ağ işlevleri sağlar. Sorulan soruya benzer sorunları çözmek için bazı kod satırlarını kullanmam gereken gerçek bir dünya durumuyla karşılaşmadığım için, sorunuzun ilgili olduğu kesin durum hakkında bilgim yok şuan, ancak öğrenmeye.
 
 
 ![App Screenshot](https://github.com/OMOJUNIOR/icob/blob/main/screenshots/Icob%202022-10-07%2009-47-30.jpg)
