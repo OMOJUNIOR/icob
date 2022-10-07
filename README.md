@@ -2,7 +2,7 @@
 ICOB
 
 
-![App Screenshot](https://raw.githubusercontent.com/OMOJUNIOR/icob/main/screenshots/Icob%202022-10-07%2009-47-30.jpg?token=GHSAT0AAAAAABWUSCZ4XYWITKSPFXQ4XRMQYZ75EVQ)
+![App Screenshot](https://github.com/OMOJUNIOR/icob/blob/main/screenshots/Icob%202022-10-07%2009-47-30.jpg)
 
 
 ![App Screenshot](https://raw.githubusercontent.com/OMOJUNIOR/icob/main/screenshots/Icob%202022-10-07%2009-44-52.jpg?token=GHSAT0AAAAAABWUSCZ56PXKRSGNXPVBTU72YZ747LQ)
