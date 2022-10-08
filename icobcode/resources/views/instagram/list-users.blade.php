@@ -3,13 +3,13 @@
 <div class="h-screen pb-14 bg-right bg-cover">
 	<div class="container pt-24 md:pt-48 px-6 mx-auto flex flex-wrap flex-col md:flex-row items-center">
 		<div class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
-			<h3 class="my-4 text-lg md:text-5xl text-purple-800 leading-tight text-center md:text-left slide-in-bottom-h1">Proxy ile arama yap</h3>
-            @if (session()->has('error'))
+			<h3 class="my-4 text-lg md:text-5xl text-purple-800 leading-tight text-center md:text-left slide-in-bottom-h1">Birden fazla benzerlik isimler Göster</h3>
+           @if (session()->has('error'))
             <div class="pb-2 font-semibold text-center text-red-600 alert alert-success dark:bg-slate-50 ">
                 {{ session()->get('error') }}
             </div>
             @endif
-            <form method="post" action="{{ route('proxy')}}">
+            <form method="post" action="{{ route('userSearch')}}">
              @csrf
                 <div class="flex">
                     <div class="relative w-full">

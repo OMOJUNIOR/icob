@@ -16,8 +16,8 @@ class CookieController extends Controller
         $response->withCookie(cookie('eposta', $request->input('eposta'), $dakika));
         $response->withCookie(cookie('konu', $request->input('konu'), $dakika));
         $response->withCookie(cookie('mesaj', $request->input('mesaj'), $dakika));
+
         return $response;
-        
     }
 
     public function getCookie(Request $request)

@@ -18,10 +18,16 @@ class PageController extends Controller
 
     public function profil()
     {
-        return view('instagram.instagram');
+        return view('instagram.user');
     }
 
-    public function proxyIle(){
+    public function profiller()
+    {
+        return view('instagram.list-users');
+    }
+
+    public function proxyIle()
+    {
         return view('instagram.proxy');
     }
 }
