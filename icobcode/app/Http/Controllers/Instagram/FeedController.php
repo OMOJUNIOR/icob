@@ -53,7 +53,7 @@ class FeedController extends Controller
 
         $path = new FilesystemAdapter('instagram', 0, __DIR__.'/cache');
         $user = new Api($path);
-        $profil = $user->login('codewithomo', 'Mawamusa@$16'); //Instagram kullancı bilgiler
+        $profil = $user->login('username', 'password16'); //Instagram kullancı bilgiler
         $profil = $user->getProfileAlternative($kullanciAdi);
 
         dd($profil);
